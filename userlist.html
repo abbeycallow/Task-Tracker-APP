@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/javascripts/global.js"></script>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="/">Tracker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="userlist">Users <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="adduser">Add Users</a>
+                </li>
+                <!--<li class="nav-item active">
+                      <a class="nav-link" href="adduser">Add Users</a>
+                    </li> 
+                    <li class="nav-item active">
+                          <a class="nav-link" href="adduser">Add Users</a>
+                        </li> -->
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Admin</a>
+             
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+
+    <div id="wrapper">
+            <!-- USER INFO-->
+            <div id="userInfo">
+            <h2>User Info</h2>
+            
+              <p><strong>Name:</strong> <span id='userInfoName'></span><br/><strong>Age:</strong> <span id='userInfoAge'></span><br/><strong>Gender:</strong> <span id='userInfoGender'></span><br/><strong>Location:</strong> <span id='userInfoLocation'></span></p>
+            </div>
+            <!-- /USER INFO-->
+        </body>
+        </html>
+
+    <!-- USER LIST-->
+    <h2>User List</h2>
+    <!-- <a href="/" class="myButtonSize btn btn-success">HOME</a> -->
+    <div id="userList">
+      <table>
+        <thead>
+          <th>UserName</th>
+          <th>Email</th>
+          <th>Delete?</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+
+    <!-- /USER LIST-->
+</body>
+</html>

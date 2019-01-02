@@ -1,0 +1,67 @@
+<!-- ADD USER-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/javascripts/global.js"></script>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/">Tracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="userlist">Users <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="adduser">Add Users</a>
+            </li>
+            <!--<li class="nav-item active">
+                  <a class="nav-link" href="adduser">Add Users</a>
+                </li> 
+                <li class="nav-item active">
+                      <a class="nav-link" href="adduser">Add Users</a>
+                    </li> -->
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Admin</a>
+         
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<div>
+<h2>Add User</h2>
+
+<hr>
+<!--<button onclick="myStuff()"> go to my console </button>"-->
+<div id="addUser">
+  <fieldset>
+    <input id="inputUserName" type="text" placeholder="Username"/>
+    <input id="inputUserEmail" type="text" placeholder="Email"/><br/>
+    <input id="inputUserFullname" type="text" placeholder="Full Name"/>
+    <input id="inputUserAge" type="text" placeholder="Age"/><br/>
+    <input id="inputUserLocation" type="text" placeholder="Location"/>
+    <input id="inputUserGender" type="text" placeholder="gender"/><br/>
+    <hr>
+    <button class="btn btn-danger" id="btnAddUser"> ADD USER </button>
+  </fieldset>
+</div>
+<!-- /ADD USER-->
+
+
+</div>
+</body>
+</html>
+
+
+
