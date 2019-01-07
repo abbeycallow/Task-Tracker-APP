@@ -28,5 +28,9 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'about it' });
 });
 
+/* GET user info page. */
+router.get('/viewprofile', function(req, res, next) {
+  res.render('viewprofile', { title: 'view profilet' });
+});
 
 module.exports = router;

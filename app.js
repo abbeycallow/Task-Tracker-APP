@@ -7,7 +7,7 @@ var logger = require('morgan');
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/ttd');
+var db = monk('mongodb://abbey:abbey1234@ds019058.mlab.com:19058/abbey');
 //done inserting pieces here
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -25,6 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 // Make our db accessible to our router
 app.use(function(req,res,next){
   req.db = db;

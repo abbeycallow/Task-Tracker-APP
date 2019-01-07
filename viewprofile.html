@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/javascripts/global.js"></script>
+
+        </body>
+        </html> 
+<!--adding my final content below-->
+        <!doctype html>
+<html lang="en">
+  <head>
+    <title> tracker home </title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="/stylesheets/style.css">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">Tracker</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="userlist">Users <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="adduser">Add Users</a>
+      </li>
+      -<li class="nav-item active">
+            <a class="nav-link" href="viewprofile">View Profile</a>
+          </li> 
+          <!--li class="nav-item active">
+                <a class="nav-link" href="adduser">Add Users</a>
+              </li> -->-->
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Admin</a>
+   
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Add stuff below here  -->
+
+<form action='/api/images' method="post" enctype="multipart/form-data">
+  <input type='file' name='image' />
+  <button type="submit">Submit</button>
+</form>
+
+<!-- dont go outta this line -->
+</body>
+</html>
